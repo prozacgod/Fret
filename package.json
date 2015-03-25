@@ -1,0 +1,11 @@
+{
+  "name": "fret",
+  "version": "0.4.0",
+  "description": "Fret no more, easily accessible tooling for npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Hagler <prozacgod@gmail.com> (http://prozacville.com/)",
+  "license": "MIT"
+}
