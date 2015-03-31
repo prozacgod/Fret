@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+var resolve = require('resolve').sync;
+
+var fretPath;
+try {
+	fretPath = resolve('fret', {basedir: process.cwd()});
+} catch (ex) {
+	fretPath = require.resolve('../index.js');
+}
+
+if (fretPath) {
+	require(fretPath).execute();
+} else {
+	console.log("Fret error, cannot locate main module.. weird..");
+}

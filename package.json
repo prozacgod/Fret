@@ -1,11 +1,40 @@
 {
   "name": "fret",
   "version": "0.4.0",
-  "description": "Fret no more, easily accessible tooling for npm",
+  "description": "Fret no more, easily accessible tooling for npm.",
   "main": "index.js",
+  "bin": {
+    "fret": "./bin/fret"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "David Hagler <prozacgod@gmail.com> (http://prozacville.com/)",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prozacgod/Fret.git"
+  },
+  "keywords": [
+    "cli",
+    "command",
+    "tooling",
+    "tools"
+  ],
+  "author": {
+    "name": "David Hagler",
+    "email": "prozacgod@gmail.com",
+    "url": "http://prozacville.com/"
+  },
+  "homepage": "https://github.com/prozacgod/Fret",
+  "license": "BSD",
+  "dependencies": {
+    "findup": "^0.1.5",
+    "findup-sync": "^0.2.1",
+    "glob": "^5.0.3",
+    "jsonfile": "^2.0.0",
+    "lodash": "^3.6.0",
+    "q": "^1.2.0",
+    "resolve": "^1.1.6",
+    "which": "^1.0.9",
+    "yargs": "^3.6.0"
+  }
 }
